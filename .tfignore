@@ -1,0 +1,6 @@
+\node_modules
+\allure-results
+\debug.log
+\package-lock.json
+.tfignore
+.gitignore

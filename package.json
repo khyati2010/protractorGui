@@ -1,0 +1,37 @@
+{
+  "name": "protractor-example",
+  "version": "0.0.1",
+  "scripts": {
+    "pretest": "rmdir allure-result && rmdir allure-report",
+    "test": "protractor protractorConf.js",
+    "posttest": "allure generate allure-result --clean -o allure-report || true",
+    "webdriver:update": "webdriver-manager update",
+    "webdriver:start": "webdriver-manager start"
+  },
+  "devDependencies": {
+    "@types/jasmine": "2.5.38",
+    "@types/node": "6.0.46",
+    "allure-commandline": "^2.7.0",
+    "aurelia-protractor-plugin": "^1.0.6",
+    "chai": "^3.5.0",
+    "chai-as-promised": "~6.0.0",
+    "chai-smoothie": "^0.3.2",
+    "jasmine": "^2.99.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-core": "2.5.2",
+    "jasmine-data-provider": "2.2.0",
+    "jasmine-expect": "^3.8.4",
+    "jasmine-spec-reporter": "^2.5.0",
+    "protractor": "^5.4.1",
+    "protractor-beautiful-reporter": "^1.2.5",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "selenium-webdriver": "3.0.1",
+    "ts-node": "^2.0.0",
+    "typescript": "~2.0.3",
+    "webdriver-manager": "^12.0.1",
+    "xlsjs": "0.7.5"
+  },
+  "dependencies": {
+    "install": "^0.12.2"
+  }
+}

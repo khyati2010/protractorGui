@@ -1,0 +1,53 @@
+import { by, element } from "protractor";
+
+export class OnboardingFormsOR {
+    static onboardingFormsTab = element(by.id("onboardingFormsTab"));
+    static masterFormTitle = element(by.xpath("//*[contains(text(),'Master Form')]"));
+    static masterFormTable = element(by.id("masterForms"));
+    static clientMasterForm = element(by.xpath("//*[@id='masterForms']/tbody/tr/td[1]"));
+    static customFormTable = element(by.id("sortable-customForms"));
+    static customFormsNamesInTable = element.all(by.xpath("//*[@id='sortable-customForms']//td[1]"));
+    static masterFormActionBtn = element(by.id("master-form-0-actions__container"));
+    static masterFormActionViewBtn = element(by.id("master-form-0-view-action"));
+    static disabledMasterFormActionBtn = element(by.id("master-form-1-actions__container"));
+    static masterFormActionCloneBtn = element(by.id("master-form-0-clone-to-custom-action"));
+    static makeActiveActionBtn = element(by.id("master-form-1-active-action"));
+    static makeActiveMasterFormModal = element(by.id("active-disable-master-form-container"));
+    static makeActiveMasterFormSubmitBtn = element(by.id("active-disable-master-form-submit-btn"));
+    static customFormActionBtn = element(by.id("custom-form-0-actions__container"));
+    static customFormActionCloneBtn = element(by.id("custom-form-0-clone-to-custom-action"));
+    static customFormActionEditBtn = element(by.id("custom-form-0-edit-action"));
+    static customFormActionViewBtn = element(by.id("custom-form-0-view-action"));
+    static customFormActionDeleteBtn = element(by.id("custom-form-0-delete-action"));
+    static addNewMasterFormBtn = element(by.id("add-master-form__btn"));
+    static vendorInformationTitle = element(by.xpath("//*[contains(text(),'Vendor Information')]"));
+    static importVendorProfileFieldsBtn = element(by.xpath("//*[contains(text(),'Import Vendor Profile Fields')]"));
+    static vendorInformationSection = element.all(by.id("vo-vendor-info-section"));
+    static productInformationSection = element.all(by.id("vo-product-info-section"));
+    static pricingInformationSection = element.all(by.id("vo-pricing-info-section"));
+    static criticalQuestionSection = element.all(by.id("vo-critical-info-section"));
+    static saveFormBtn = element(by.id("vo-form__save-btn"));
+    static viewMasterForm = element(by.id("onboardingMasterForm"));
+    static closeViewMasterForm = element(by.xpath("//*[contains(text(),'Close')]"));
+    static pricingSectionAddFieldBtn = element(by.id("addCustomItemPricing"));
+    static addFieldModalPopup = element(by.id("add-custom-item-pricing__dialog"));
+    static addFieldLblInput = element(by.id("add-custom-item-pricing__input"));
+    static addFieldSubmitBtn = element(by.id("add-custom-item-pricing-dialog__add-field-btn"));
+    static masterFormNames = element.all(by.xpath("//*[@id='masterForms']/tbody/tr/td[1]"));
+    static masterFormActionBtns = element.all(by.xpath("//*[@id='masterForms']/tbody/tr/td[5]"));
+    static customFieldcloseBtn = element(by.xpath("*//label[contains(text(),'test')]/../i[@click.delegate='removePricingQuestion(customItem)']"));
+    static masterFormCancelBtn = element(by.id("vo-form__cancel-btn"));
+    static formNameInputBoxCloneToCustom = element(by.id("vo-form-name__input"));
+    static loader = element(by.xpath("//img[@ref='imgElem']"));
+    static categoryDropdown = element(by.id("dropdown-category-dropdown__btn"));
+    static selectCategoriesDropdown = element(by.id("category-dropdown-list-container"));
+    static firstCategoryDropdown = element(by.id("category-dropdown-list-item-0"));
+    static addNewCustomFormBtn = element(by.id("add-custom-form__btn"));
+    static customFormViewCancelBtn = element(by.id("vo-view-form-cancel-button"));
+    static editFormNameInput = element(by.id("vo-form-name__input"));
+    static riskAssessmentQuestionRemoveBtn = element(by.xpath("//*[@id='vo-risk-info-section']/div[1]/table/tbody/tr[1]/td[5]/i"));
+    static deleteCustomFormodal = element(by.id("delete-custom-form"));
+    static deleteCustomFormModalBtn = element(by.id("delete-custom-form-delete"));
+    static deleteFormAcknowldgChkbox = element(by.className("checkbox checkbox-primary checkbox-inline"));
+
+}
