@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1548248535999' stop='1548249144798'>
+    <name>ORBCR - Functional Testing of Admin Panel Product Categories Tab PBI-593 --> Admin Panel - By Product - Sort Category</name>
+    <title>ORBCR - Functional Testing of Admin Panel Product Categories Tab PBI-593 --> Admin Panel - By Product - Sort Category</title>
+    <test-cases>
+        <test-case start='1548248535999' status='failed' stop='1548248770532'>
+            <name>Admin Panel - By product - sort by product name</name>
+            <title>Admin Panel - By product - sort by product name</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='4a8837f8-5d7d-4f40-bd35-8b9edf0e6073-attachment.png' type='image/png' size='125808'/>
+            </attachments>
+            <failure>
+                <message>Expected true to equal false.</message>
+                <stack-trace>Error: Failed expectation
+                    at ProductCategoryByProductPage.assertEquals (C:\Users\khyati.sehgal\source\Workspaces\Venminder\QA\SAND-DEV-1\e2e\com.venminder.page\shared\BasePage.ts:61:25)
+                    at ProductCategoriesOR_1.ProductCategoriesOR.btnAddCategory.isDisplayed.then.isDisplayed (C:\Users\khyati.sehgal\source\Workspaces\Venminder\QA\SAND-DEV-1\e2e\com.venminder.page\AdminPanel\ProductCategoryByProductPage.ts:35:14)
+                    at elementArrayFinder_.then (C:\Users\khyati.sehgal\source\Workspaces\Venminder\QA\SAND-DEV-1\node_modules\protractor\built\element.js:804:32)
+                    at ManagedPromise.invokeCallback_ (C:\Users\khyati.sehgal\source\Workspaces\Venminder\QA\SAND-DEV-1\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+                    at TaskQueue.execute_ (C:\Users\khyati.sehgal\source\Workspaces\Venminder\QA\SAND-DEV-1\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                    at TaskQueue.executeNext_ (C:\Users\khyati.sehgal\source\Workspaces\Venminder\QA\SAND-DEV-1\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+                    at asyncRun (C:\Users\khyati.sehgal\source\Workspaces\Venminder\QA\SAND-DEV-1\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+                    at C:\Users\khyati.sehgal\source\Workspaces\Venminder\QA\SAND-DEV-1\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+                    at &lt;anonymous></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1548248770532' status='passed' stop='1548248895490'>
+            <name>Admin Panel - By product -sort by category name</name>
+            <title>Admin Panel - By product -sort by category name</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='4f604eec-a76c-46c5-9dbe-b4aba78e82eb-attachment.png' type='image/png' size='127369'/>
+            </attachments>
+        </test-case>
+        <test-case start='1548248895490' status='passed' stop='1548249020241'>
+            <name>Admin Panel - By product -sort by exempt category </name>
+            <title>Admin Panel - By product -sort by exempt category </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='26ea52d3-cd3e-4899-b4d8-cab1ebfcf0a2-attachment.png' type='image/png' size='127449'/>
+            </attachments>
+        </test-case>
+        <test-case start='1548249020241' status='passed' stop='1548249144793'>
+            <name>Admin Panel - By product -sort by vendor name </name>
+            <title>Admin Panel - By product -sort by vendor name </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='39eb25ce-309b-498b-93d5-444f5eaa9c94-attachment.png' type='image/png' size='121357'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
